@@ -1,8 +1,10 @@
-# JCCHENG Branding Preso
+# jccheng.com Branding Preso
 
 A presentation deck showcasing the brand and accomplishments of jccheng.com by utilizing reveal-js framework.
-[Check out the presentation deck](http://jccheng.com/branding-deck/)
-[Launch personal website](http://jccheng.com/)
+
+[Check out the presentation deck](http://jccheng.com/branding-deck/ "jccheng - branding preso")
+
+[Launch personal website](http://jccheng.com/ "jccheng.com")
 
 ### Folder Structure
 - **css/** Core styles without which the project does not function
