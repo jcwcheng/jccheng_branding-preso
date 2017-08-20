@@ -1,0 +1,142 @@
+/**
+ * Black theme for reveal.js. This is the opposite of the 'white' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+// Include theme-specific fonts
+// @import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: linear-gradient(4deg, rgba(78, 147, 245, 0) 84%, rgba(78, 147, 245, 1) 100%),
+linear-gradient(45deg, #5533FF 0%, #25DDF5 94%);
+$mainColor: #fff;
+$headingColor: #fff;
+$mainFontSize: 42px;
+$mainFont: "proxima-nova",
+sans-serif;
+$headingFont: "proxima-nova",
+sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #42affa;
+$linkColorHover: lighten( $linkColor, 15%);
+$selectionBackgroundColor: lighten( $linkColor, 25%);
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+section.has-light-background {
+	&,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: #222;
+	}
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+.reveal .slides section h1{
+	font-weight: 700;
+	font-size: 1.4em;
+}
+.reveal .slides section h3{
+	font-weight: 700;
+	font-size: .8em;
+    margin-top: 70px;
+    margin-bottom: -10px;	
+}
+.reveal .slides section span{
+	font-weight: 400;
+	font-size: .4em;
+	display: block;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+	-ms-background-clip: text;
+	-ms-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	background-image: -webkit-linear-gradient(top left, #FF6000, #3762FC, #26DAF5);
+	background-image: linear-gradient(to bottom right, #FF6000, #3762FC, #26DAF5);	
+}
+.philosophy-sentence {
+	margin: 0 0 48px;
+	font-weight: 400;
+	display: inline-block;
+	background-color: #3762FC;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+	-ms-background-clip: text;
+	-ms-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	background-image: -webkit-linear-gradient(top left, #FF6000, #3762FC, #26DAF5);
+	background-image: linear-gradient(to bottom right, #FF6000, #3762FC, #26DAF5);
+	p {
+		font-size: 36px;
+		font-family: "ff-meta-serif-web-pro", serif;
+		line-height: 58px;
+	}
+}
+.brand-pillar__background:nth-of-type(1){
+	background-image: linear-gradient(-180deg, #5533FF 0%, #25DDF5 100%);	
+}
+.brand-pillar__background:nth-of-type(2){
+	background-image: linear-gradient(-180deg,#352956 0%, #4725FF 100%);
+}
+.brand-pillar__background:nth-of-type(3){
+	background-image: linear-gradient(-180deg, #FF6000 0%, #FC825E 100%);
+}
+.reveal .slides > section section.brand-pillar__background{
+	width: 10em;
+    height: 9em;
+	border-radius: 90%;
+    margin: 0 auto;
+    right: 0;
+	left: 0;
+	box-shadow: 0 0 60px rgba(0, 0, 0, 0.06);	
+}
+
+
+section section .brand-pillar{
+	font-family: "ff-meta-serif-web-pro", serif;
+	letter-spacing: .2em;
+	line-height: 2em;
+	// padding-top: .6em;
+	text-transform: none;
+	font-size:.8em;
+
+	margin: auto;
+	position: absolute;
+	top: 50%; left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.gradient-text{
+	background-color: #3762FC;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+	-ms-background-clip: text;
+	-ms-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	background-image: -webkit-linear-gradient(top left, #FF6000, #3762FC, #26DAF5);
+	background-image: linear-gradient(to bottom right, #FF6000, #3762FC, #26DAF5);
+}
